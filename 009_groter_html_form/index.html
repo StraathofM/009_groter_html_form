@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Formulier</title>
+</head>
+<body>
+    <header>
+        <h1>Jouw eigen recept op onze website?</h1>
+        <h2>Neem contact met ons op!</h2>
+    </header>
+
+    <main>
+        <p>Ben je chefkok en wil je ook je recept op onze website zien?<br>
+            Vul onderstaand contactformulier in en upload je recept. 
+            We nemen dan binnen twee werkdagen contact met je op.</p><br>
+
+            <form name="contact" method="POST" data-netlify="true">
+                <label for="vnaam">Voornaam:</label>
+                <input type="text" id="vnaam" name="vnaam"/><br>
+
+                <label for="anaam">Achternaam:</label>
+                <input type="text" id="anaam" name="anaam"/><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"/><br>
+
+                <label for="telnr">Tel.nr.:</label>
+                <input type="tel" id="telnr" name="telnr"/><br>
+
+                <label for="leeftijd">Leeftijd:</label>
+                <input type="text" id="leeftijd" name="leeftijd"/><br>
+
+                <label for="gebdat">Geboortedatum</label>
+                <input type="date" id="gebdat" name="gedat"/><br>
+
+                <label>Geslacht:</label><br>
+                <input type="radio" id="male" name="geslacht" value="male">
+                <label for="male">Man</label><br>
+
+                <input type="radio" id="female" name="geslacht" value="female">
+                <label for="female">Vrouw</label><br>
+
+                <input type="radio" id="other" name="geslacht" value="other">
+                <label for="other">Anders</label><br>
+
+                <label>Favoriete cuisine:</label><br>
+
+                <input type="checkbox" id="frans" name="frans">
+                <label for="frans">Frans</label><br>
+
+                <input type="checkbox" id="italiaans" name="italiaans">
+                <label for="italiaans">Italiaans</label><br>
+
+                <input type="checkbox" id="spaans" name="spaans">
+                <label for="spaans">Spaans</label><br>
+
+                <input type="checkbox" id="arab" name="arab">
+                <label for="arab">Arabisch</label><br>
+
+                <label for="kleur">Favoriete kleur:</label>
+                <input type="color" id="kleur" name="kleur" value="#ff0000">
+                <input type="submit" value="Verstuur"><br>
+
+                <label for="bio">Biografie:</label>
+                <textarea name="bio" id="bio" cols="30" rows="10"></textarea><br>
+                
+                <label for="recept">Upload je recept:</label>
+                <input type="file" id="recept" name="recept"><br>
+
+                <label for="website">Je eigen website:</label>
+                <input type="url" id="website" name="website"><br><br>
+
+                <input type="reset">
+
+                <input type="submit" name="submit" value="Verstuur">
+            </form>
+        
+        </main>
+    
+    <footer>
+
+    </footer>
+</body>
+</html>
+
+<!-- 
+    font-family: 'Quicksand', sans-serif;
+-->
